@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         if ((pid = fork()) < 0) {
             err_sys("fork error");
         } else if (pid == 0) { /* child */
-            execlp(buf, buf, (char*)0);
+            execl("/bin/sh", "sh", "-c", buf, (char*)0);
             err_ret("couldn't execute: %s", buf);
             exit(127);
         } else { /* parent */

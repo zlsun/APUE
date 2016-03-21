@@ -3,7 +3,7 @@ include utils.mk
 
 MAKE = make --no-print-directory
 
-DIRS = lib 1 2 3 4
+DIRS = lib $(wildcard ?) $(wildcard 1?)
 
 all clean:
 	@for i in $(DIRS); do         \
