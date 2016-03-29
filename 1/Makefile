@@ -6,5 +6,4 @@ PROGS=$(cs:.c=)
 all: $(PROGS)
 
 clean:
-	$(RM) $(PROGS)
-
+	$(RM) $(PROGS) *.o

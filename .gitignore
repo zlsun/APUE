@@ -34,3 +34,14 @@
 .*.py*
 __pycache__/
 
+?/*
+!?/*.*
+2/conf.*
+2/options.*
+2/pathconf.sym
+2/pathopt.sym
+2/sysconf.sym
+2/sysopt.sym
+1?/*
+!1?/*.*
+
